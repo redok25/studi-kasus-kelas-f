@@ -1,0 +1,16 @@
+Aplikasi Buku Kontak
+
+MS => Layouting
+MSelanjutnya => Bikin Logic
+
+Fitur:
+ 1. Buat Kontak (Layout Sudah)
+ 2. Edit Kontak (Layout Sudah)
+ 3. Hapus Kontak
+ 4. Login (Layout Sudah)
+ 5. Register (Layout Sudah)
+
+Library:
+ 1. Bootstrap
+ 2. Font Awesome
+ 
