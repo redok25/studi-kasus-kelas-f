@@ -1,4 +1,11 @@
-<?php include('header.php') ?>
+<?php
+include('header.php');
+
+$id = $_GET['id'];
+$data = $conn->query("SELECT * FROM `kontak` WHERE id = '$id' ");
+$data = $data->fetch_assoc();
+
+?>
 
 <body>
     <?php include('navbar.php') ?>
@@ -11,20 +18,21 @@
                     <h3 style="float: left;">Edit Kontak</h3>
                 </div>
                 <div class="card-body">
-                    <form>
+                    <form action="proses/edit-kontak.php" method="POST">
+                        <input type="hidden" name="id" value="<?= $id ?>">
                         <div class="mb-3">
                             <label for="inputNama" class="form-label">Nama</label>
-                            <input type="text" placeholder="Input disini ..." class="form-control" id="inputNama">
+                            <input value="<?= $data['nama'] ?>" type="text" placeholder="Input disini ..." class="form-control" id="inputNama" name="nama">
                         </div>
 
                         <div class="mb-3">
                             <label for="inputNoHP" class="form-label">No Handhphone</label>
-                            <input type="text" placeholder="Input disini ..." class="form-control" id="inputNoHP">
+                            <input value="<?= $data['no_hp'] ?>" type="text" placeholder="Input disini ..." class="form-control" id="inputNoHP" name="no_hp">
                         </div>
 
                         <div class="mb-3">
                             <label for="inputNama" class="form-label">Alamat</label>
-                            <textarea placeholder="Input disini ..." name="alamat" id="inputAlamat" class="form-control"></textarea>
+                            <textarea placeholder="Input disini ..." name="alamat" id="inputAlamat" class="form-control"><?= $data['alamat'] ?></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary"><i class="fa-solid fa-pen"></i> Edit Data</button>

@@ -10,15 +10,15 @@
                     <h3 class="text-center">Form Login</h3>
                 </div>
                 <div class="card-body">
-                    <form>
+                    <form action="proses/login.php" method="POST">
                         <div class="mb-3">
                             <label for="inputUsername" class="form-label">Username</label>
-                            <input type="text" placeholder="Input disini ..." class="form-control" id="inputUsername">
+                            <input type="text" placeholder="Input disini ..." class="form-control" id="inputUsername" name="username">
                         </div>
 
                         <div class="mb-3">
                             <label for="inputPassword" class="form-label">Password</label>
-                            <input type="password" placeholder="Input disini ..." class="form-control" id="inputPassword">
+                            <input type="password" placeholder="Input disini ..." class="form-control" id="inputPassword" name="password">
                         </div>
                         <hr>
                         <a href="register.php" style="display: block; margin-bottom:10px;">Belum punya akun? Daftar di sini!</a>

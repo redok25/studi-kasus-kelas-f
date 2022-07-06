@@ -1,3 +1,5 @@
+<?php include('config.php') ?>
+
 <!-- HEADER -->
 <!doctype html>
 <html lang="en">

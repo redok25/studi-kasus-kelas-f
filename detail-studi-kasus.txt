@@ -1,14 +1,14 @@
 Aplikasi Buku Kontak
 
-MS => Layouting
+MS => Layouting (Sudah)
 MSelanjutnya => Bikin Logic
 
 Fitur:
- 1. Buat Kontak (Layout Sudah)
- 2. Edit Kontak (Layout Sudah)
- 3. Hapus Kontak
- 4. Login (Layout Sudah)
- 5. Register (Layout Sudah)
+ 1. Buat Kontak (Layout Sudah, Logic Sudah)
+ 2. Edit Kontak (Layout Sudah, Logic Sudah)
+ 3. Hapus Kontak (Logic Sudah)
+ 4. Login (Layout Sudah, Logic sudah)
+ 5. Register (Layout Sudah, Logic Sudah)
 
 Library:
  1. Bootstrap

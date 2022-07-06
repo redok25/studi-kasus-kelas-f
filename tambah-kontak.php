@@ -12,15 +12,15 @@
                     <h3 style="float: left;">Tambah Kontak</h3>
                 </div>
                 <div class="card-body">
-                    <form>
+                    <form action="proses/tambah-kontak.php" method="POST">
                         <div class="mb-3">
                             <label for="inputNama" class="form-label">Nama</label>
-                            <input type="text" placeholder="Input disini ..." class="form-control" id="inputNama">
+                            <input type="text" placeholder="Input disini ..." class="form-control" id="inputNama" name="nama">
                         </div>
 
                         <div class="mb-3">
                             <label for="inputNoHP" class="form-label">No Handhphone</label>
-                            <input type="text" placeholder="Input disini ..." class="form-control" id="inputNoHP">
+                            <input type="text" placeholder="Input disini ..." class="form-control" id="inputNoHP" name="no_hp">
                         </div>
 
                         <div class="mb-3">
