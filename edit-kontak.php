@@ -1,6 +1,6 @@
 <?php
 include('header.php');
-
+include('hak-akses.php');
 $id = $_GET['id'];
 $data = $conn->query("SELECT * FROM `kontak` WHERE id = '$id' ");
 $data = $data->fetch_assoc();

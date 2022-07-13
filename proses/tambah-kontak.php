@@ -13,6 +13,7 @@ $query = "INSERT INTO `kontak`(`nama`, `no_hp`, `alamat`) VALUES ('$nama','$no_h
 
 // Proses
 if ($conn->query($query) == TRUE) {
+    $_SESSION['notif'] = "Kamu berhasil menambahkan data kontak!";
     header("Location: ../index.php");
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
